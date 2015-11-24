@@ -1,7 +1,7 @@
 Currently just a bunch of notes about what is going to happen on the pi at the kiosk end
 
 
-qiv -fsT -d 10 /home/pi/slideshow/showme.jpg
+qiv -fsT -d 10 --no_statusbar /home/pi/slideshow/showme.jpg
 
 for I in `ls /home/pi/sourceimages/*.jpg`; do cp ${I} /home/pi/slideshow/showme.jpg && sleep 10; done
 
